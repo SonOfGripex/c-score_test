@@ -22,7 +22,7 @@ def checker(email: str, proxy: str) -> Optional[bool]:
 
     seleniumwire_options = {
         'proxy': {
-            'https': f'https://{proxy_user}:{proxy_password}@{proxy_ip}:{proxy_port}',
+            'http': f'http://{proxy_user}:{proxy_password}@{proxy_ip}:{proxy_port}',
         }
     }
 
