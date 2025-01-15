@@ -5,9 +5,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from typing import Optional
 
 
-def checker(email: str, proxy: str):
+def checker(email: str, proxy: str) -> Optional[bool]:
     seleniumwire_options = {
         'proxy': {
             'https': proxy,
